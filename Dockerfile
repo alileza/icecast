@@ -29,7 +29,7 @@ RUN autoheader
 RUN autoreconf -fi
 RUN automake --add-missing
 
-RUN ./configure
+RUN ./configure --enable-ipv6
 RUN make
 RUN make install
 
